@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 1fr 10fr 1fr;
+            color: white;
+            padding: 20px;
+            font-size: 25px;
+            background-color: rgba(127, 255, 212, 0.562);
+        }
+        .header{
+            background-color: rgb(35, 167, 64);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer{
+            background-color: rgb(35, 167, 64);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding:20px 0px; 
+            gap: 20px;
+        }
+        .aside{
+            background-color: rgb(71, 255, 47);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .article{
+            display: grid;
+            grid-template-rows: 5fr 5fr;
+        }
+        .boxone{
+            background-color: orange;
+            display: grid;
+            align-items:end;
+            justify-content: center;
+        }
+        .boxtwo{
+            background-color:orange;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding:15px 20px;
+        }
+        .boxtwo .box{
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="main">
+            <div class="aside">Aside</div>
+            <div class="article">
+                <div class="boxone">Article</div>
+                <div class="boxtwo">
+                    <div class="box">Image</div>
+                    <div class="box">Image</div>
+                    <div class="box">Image</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

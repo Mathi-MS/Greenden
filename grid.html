@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 12fr ;
+            grid-template-rows: 2fr 10fr 2fr;
+            height: 100vh;
+            color: white;
+            gap: 5px;
+        }
+        .two{
+            display: grid;
+            grid-template-rows: 8fr 5fr;
+            justify-content: center;
+            gap: 5px;
+        }
+        .two-one{
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+            gap: 5px;
+            height: 100%;
+            width: 70vw;
+        }
+        .two-one div{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .two-two div{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .two-two{
+            display: grid;
+            grid-template-columns: 8fr 8fr;
+            gap: 5px;
+            height: 100%;
+            width: 70vw;
+        }
+        .one{
+            display: grid;
+            align-items: center;
+        }
+        .three{
+            display: grid;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" style="background-color:skyblue;">header</div>
+    <div class="two">
+        <div class="two-one">
+            <div style="background-color:rgb(42, 235, 42);">main-content</div>
+            <div style="background-color:rgb(248, 89, 116);">sidebar</div>
+        </div>
+        <div class="two-two">
+            <div style="background-color:rgb(243, 136, 48);">twin</div>
+            <div style="background-color:rgb(243, 136, 48);">twin</div>
+        </div>
+    </div>
+    <div class="three" style="background-color:blue;">footer</div>
+</body>
+</html>
